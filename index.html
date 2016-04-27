@@ -116,7 +116,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/tags/cake.png" class="img-responsive fixed-size" alt="">
+                        <img src="img/tags/sections.jpg" class="img-responsive fixed-size" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 tags-item">
@@ -126,7 +126,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/tags/circus.png" class="img-responsive fixed-size" alt="">
+                        <img src="img/tags/non_empty_lists.jpg" class="img-responsive fixed-size" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 tags-item">
@@ -423,7 +423,7 @@
                                     <strong>Април 2016</strong>
                                 </li>
                                 <li>Източник:
-                                    <strong><a href="http://mustache.github.io/mustache.5.html#Sections">Mustache</a>
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Variables">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -448,49 +448,47 @@
                         <div class="modal-body">
                             <h2>Секции</h2>
                             <hr class="star-primary">
-                            <img src="img/tags/cake.png" class="img-responsive img-centered" alt="">
+                            <img src="img/tags/sections.jpg" class="img-responsive img-centered" alt="">
                             <p>Секциите рендерират блокове от текст един или повече пъти в зависимост от стойността на ключа в текущия контекст.</p>
 
                             <p>Секцията започва с "#" и завършва с "/". Например тагът {{#person}} започва секцията "person", а тагът {{/person}} я завършва.</p>
 
                             <p>Поведението на секцията се определя от стойността на ключа.</p>
 
-                            <p>Стойност false или празен списък</p>
+                            <p><b>Стойност false или празен списък:</b></p>
 
                             <p>Ако ключът person съществува и има стойност false или празен лист, HTML-ът между "#" и "/" няма да се визуализира.</p>
 
-Template:
-
-Shown.
+                            <p><code>Template:</code></p>
+<pre><code>Shown.
 {{#person}}
   Never shown!
 {{/person}}
+</code></pre>
 
-Hash:
-
-{
-  "person": false
+                            <p><code>Hash:</code></p>
+<pre><code>{
+                 "person": false
 }
+</code></pre>
 
-Output:
+                            <p><code>Output:</code></p>
 
-Shown.
-</p>
+                            <pre><code>Shown.</code></pre>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Sections">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
                         </div>
                     </div>
                 </div>
@@ -511,7 +509,7 @@ Shown.
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/tags/circus.png" class="img-responsive img-centered" alt="">
+                            <img src="img/tags/non_empty_lists.jpeg" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
