@@ -126,7 +126,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/tags/non_empty_lists.jpg" class="img-responsive fixed-size" alt="">
+                        <img src="img/tags/non_empty_lists.png" class="img-responsive fixed-size" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 tags-item">
@@ -136,7 +136,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/tags/game.png" class="img-responsive fixed-size" alt="">
+                        <img src="img/tags/lambda.png" class="img-responsive fixed-size" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 tags-item">
@@ -146,7 +146,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/tags/safe.png" class="img-responsive fixed-size" alt="">
+                        <img src="img/tags/true-false.jpg" class="img-responsive fixed-size" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 tags-item">
@@ -156,7 +156,37 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/tags/submarine.png" class="img-responsive fixed-size" alt="">
+                        <img src="img/tags/inverted_sections.png" class="img-responsive fixed-size" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item">
+                    <a href="#tagsModal7" class="tags-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/comments.jpg" class="img-responsive fixed-size" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item">
+                    <a href="#tagsModal8" class="tags-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/partials.jpg" class="img-responsive fixed-size" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item">
+                    <a href="#tagsModal9" class="tags-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/delimiter.jpg" class="img-responsive fixed-size" alt="">
                     </a>
                 </div>
             </div>
@@ -408,7 +438,7 @@
 "name": "Chris",
    "company": "<b>GitHub</b>"
 }</code></pre>
-                            <p><code>Output:</code></p>
+                            <p><code>Резултат:</code></p>
                             <pre><code>Chris
 
 &lt;b&gt;GitHub&lt;/b&gt;
@@ -459,20 +489,20 @@
 
                             <p>Ако ключът person съществува и има стойност false или празен лист, HTML-ът между "#" и "/" няма да се визуализира.</p>
 
-                            <p><code>Template:</code></p>
+                            <p><code>Темплейт:</code></p>
 <pre><code>Shown.
 {{#person}}
   Never shown!
 {{/person}}
 </code></pre>
 
-                            <p><code>Hash:</code></p>
+                            <p><code>Хеш таблица:</code></p>
 <pre><code>{
                  "person": false
 }
 </code></pre>
 
-                            <p><code>Output:</code></p>
+                            <p><code>Резултат:</code></p>
 
                             <pre><code>Shown.</code></pre>
                             <ul class="list-inline item-details">
@@ -507,25 +537,46 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Непразни списъци</h2>
                             <hr class="star-primary">
-                            <img src="img/tags/non_empty_lists.jpeg" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/tags/non_empty_lists.png" class="img-responsive img-centered" alt="">
+                            <p>Ако ключът person съществува и има стойност, различна от false, HTML-ът между "+" и "/" ще се визуализира един или повече пъти.</p>
+                            <p>Когато стойността е непразен списък, текстът в блока ще се визуализира по един път за всеки елемент в списъка. Контекстът на блока ще се запазва във всеки елемент за всяка итерация. По този начин се осъществява обхождане на колекциите.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#repo}}
+<b>{{name}}</b>
+{{/repo}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+            "repo": [
+                              { "name": "resque" },
+                           { "name": "hub" },
+                          { "name": "rip" }
+      ]
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code><b>resque</b>
+<b>hub</b>
+<b>rip</b></code></pre>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Non-emptyLists">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
                         </div>
                     </div>
                 </div>
@@ -544,25 +595,44 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Lambda изрази</h2>
                             <hr class="star-primary">
-                            <img src="img/tags/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/tags/lambda.png" class="img-responsive img-centered" alt="">
+                            <p>Когато стойността е обект, който можем да изпълним, например – функция или lamda функции, обектът ще се изпълни и ще се предаде на контекста в блока.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#wrapped}}
+<b>{{name}}</b>
+{{/wrapped}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+                    "name": "Willy",
+                            "wrapped": function () {
+                                        return function (text, render) {
+                                              return "&lt;b&gt;" + render(text) + "&lt;b&gt;"
+        }
+    }
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code><b>Willy is awesome.</b></code></pre>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Lambdas">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
                         </div>
                     </div>
                 </div>
@@ -581,25 +651,39 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Non-False стойности</h2>
                             <hr class="star-primary">
-                            <img src="img/tags/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/tags/true-false.jpg" class="img-responsive img-centered" alt="">
+                            <p>Когато стойността на променлива е non-false, но не е списък, тя ще бъде използвана еднократно в блока при рендерирането си.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#person?}}
+ Hi {{name}}!
+{{/person?}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+                    "person?": { "name": "Jon" }
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>Hi Jon!</b></code></pre>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Non-FalseValues">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
                         </div>
                     </div>
                 </div>
@@ -618,25 +702,201 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Обърнати секции</h2>
                             <hr class="star-primary">
-                            <img src="img/tags/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/tags/inverted_sections.png" class="img-responsive img-centered" alt="">
+                            <p>Обърнатите секции започват с "^" и завършват с "/". Например {{ ^person }} започва обърната секция "person", {{ /person }} я завършва.</p>
+                            <p>Докато секциите могат да се използват един или повече пъти спрямо стойността на ключа, то обърнатите секции могат да рендерират текстът един път в зависимост от обърнатата стойност на ключа.</p>
+                            <p>Тоест ако ключът не съществува, ще бъде рендерирано като false или като празен списък.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#repo?}}
+  <b>{{name}}</b>
+{{/repo}}
+{{^repo}}
+  No repos :(
+{{/repo}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+            "repo": []
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>
+No repos :(</code></pre>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Inverted-Sections">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Коментари</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/comments.jpg" class="img-responsive img-centered" alt="">
+                            <p>Коментарите започват с “!” и се игнорират при рендерирането на HTML.</p>
+                            <p>Коментарите могат да съдържат нови редове.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>&lt;h1&gt;Today{{! ignore me }}.&lt;/h1&gt;</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>
+&lt;h1&gt;Today.&lt;/h1&gt;</code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Comments">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Partials (частични темплейти)</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/partials.jpg" class="img-responsive img-centered" alt="">
+                            <p>Partial-ите започват с “>” като {{> box}}.</p>
+                            <p>Partial-ите се рендерират по време на изпълнение и е възможно да има рекурсивни части, стига да се избягват безкрайните цикли.</p>
+                            <p>Частите наследяват контекста, от който са извикани. Например в <code>eRuby</code> (<a href="http://en.wikipedia.org/wiki/ERuby">Embedded Ruby</a>) може да имаме следния пример:.</p>
+<pre><code><%= partial :next_more, :start => start, :size => size %></code></pre>
+
+                            <p><code>Mustache изисква само това:</code></p>
+<pre><code>{{> next_more}}</code></pre>
+
+                            <h3>Защо?</h3>
+                            <p>Защото файлът next_more.mustache ще наследи  методите size и start от извикващия контекст.</p>
+                            <p>По този начин можете да си мислите за partial-ите като includes, imports, разширители на темплейти, вгнездени темплейти, подтемплейти и др.</p>
+
+                            <p>Например темплейтът <code>base.mustache</code>:</p>
+ <pre><code>&lt;h2&gt;Names&lt;/h2&gt;
+{{#names}}
+  {{> user}}
+{{/names}}
+</code></pre>
+                            <p>и partial <code>user.mustache</code>:</p>
+<pre><code>&lt;strong&gt;{{name}}&lt;/strong&gt;
+</code></pre>
+
+                            <p>Могат да се напишат като <code>един разширен темплейт</code>:</p>
+
+<pre><code>&lt;h2&gt;Names&lt;/h2&gt;
+{{#names}}
+  &lt;strong&gt;{{name}}&lt;/strong&gt;
+{{/names}}
+</code></pre>
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Partials">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Поставяне на разделители</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/delimiter.jpg" class="img-responsive img-centered" alt="">
+                            <p>Поставянето на разделители започва с "=" и променя разделителите за тагове от "{{" и "}}" към собствено дефинирани стрингове.</p>
+                            <p><code>Пример:</code></p>
+<pre><code>* {{default_tags}}
+{{=<% %>=}}
+* <% erb_style_tags %>
+<%={{ }}=%>
+* {{ default_tags_again }}
+</code></pre>
+
+                            <p>Тук имаме списък от 3 елемента. Първият елемент използва стила на таговете по подразбиране, вторият използва <a href="http://en.wikipedia.org/wiki/ERuby">erb</a> стила, както е дефинирано според тагът за разделител, и третият елемент връща първоначалния стил след още една декларация на таг за разделител.</p>
+                            <p>Според <a href="http://ctemplate.sourceforge.net/">ctemplates</a> това е "полезно за езици като TeX, в които двойните къдрави скоби може да се появят в текста".</p>
+                            <p style="color:red;">ВАЖНО!!! Собствено дефинираните разделители не могат да съдържат спейсове или "=".</p>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Set-Delimiter">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
                         </div>
                     </div>
                 </div>
@@ -657,25 +917,32 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Коментари</h2>
                             <hr class="star-primary">
                             <img src="img/languages/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>Коментарите започват с “!” и се игнорират при рендерирането на HTML.</p>
+                            <p>Коментарите могат да съдържат нови редове.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code><h1>Today{{! ignore me }}.</h1></code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>
+<h1>Today.</h1></code></pre>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                                <li>Дата:
+                                    <strong>Април 2016</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Comments">Mustache</a>
                                     </strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
                         </div>
                     </div>
                 </div>
