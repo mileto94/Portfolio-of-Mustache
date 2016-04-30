@@ -77,11 +77,16 @@ hr.star-primary:after {
 
 .img-centered {
     margin: 0 auto;
+    max-height: 260px;
+    max-width: 360px;
 }
 
 .fixed-size {
-    width: 360px;
+    max-width: 360px;
+    min-width: 220px;
     height: 260px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -106,6 +111,14 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+}
+
+.skills a {
+    color: white;
+}
+
+.skills a:hover {
+    color: #2c3e50;
 }
 
 header .intro-text .skills {
@@ -461,4 +474,8 @@ footer .footer-below {
 .tags-modal .modal-backdrop, .languages-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.modal-body p, .modal-body pre {
+    text-align: left;
 }
