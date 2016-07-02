@@ -106,7 +106,7 @@
                 </div>
                 <br>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JlmoQBF2lvw" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="tutorial-video" src="https://www.youtube.com/embed/JlmoQBF2lvw" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -313,8 +313,43 @@
                             <a href="https://github.com/mileto94">GitHub</a> и 
                             <a href="https://bg.linkedin.com/in/milka-ferezliyska-91915098">LinkedIn</a>
                         </p>
+                    </div>
+
+                    <div class="row control-group center contact-msg-holder">
+                        <h4>Може да ми изпратиш няколко реда:</h4>
+                        <form name="sentMessage" id="contactForm">
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Име</label>
+                                    <input type="text" class="form-control" placeholder="Име" id="name" required data-validation-required-message="Упс, май не е попълнено името ти.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Имейл адрес</label>
+                                    <input type="email" class="form-control" placeholder="Имейл адрес" id="email" required data-validation-required-message="Упс, май не е попълнен имейл адресът ти.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Съобщение</label>
+                                    <textarea rows="5" class="form-control" placeholder="Съобщение" id="message" required data-validation-required-message="Упс, май не е попълнено съобщението ти."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-info btn-lg">Изпрати</button>
+                                </div>
+                            </div>
+                        </form>
                         <h3 class="center">Благодаря!</h3>
                     </div>
+
                 </div>
             </div>
         </div>

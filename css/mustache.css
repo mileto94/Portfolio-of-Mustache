@@ -140,9 +140,7 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
-}
 
-@media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
         -webkit-transition: padding .3s;
@@ -276,6 +274,11 @@ section.success a.active {
 @media(min-width:767px) {
     #tags .tags-item, #languages .languages-item {
         margin: 0 0 30px;
+    }
+
+    .tutorial-video {
+        width: 767px;
+        height: 400px;
     }
 }
 
@@ -547,4 +550,21 @@ footer .footer-below {
 
 #to-top i {
     vertical-align: text-top;
+}
+
+.contact-msg-holder {
+    padding-top: 40px;
+}
+
+#contactForm {
+    padding: 20px 0 30px 0;
+}
+
+.contact-msg-holder .form-control {
+    color: #FFF;
+}
+
+.tutorial-video {
+    max-width: 65%;
+    min-width: 50%;
 }
