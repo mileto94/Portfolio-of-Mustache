@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{mustache}}</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/mustache.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">{{mustache}}</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">За mustache</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#tags">Тагове</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#languages">Езици</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">{{mustache}}</span>
+                        <hr class="star-light">
+                        <span class="skills">Mustache е проста система за темплейти с имплементация на ActionScript, <a href="#c++">C++</a>, Clojure, CoffeeScript, ColdFusion, D, Delphi, Erlang, Fantom, Go, Haskell, Io, <a href="#java">Java</a>, <a href="#js">JavaScript</a>, Julia, Lua, .NET, Objective-C, Perl, <a href="#php">PHP</a>, Pharo, <a href="#python">Python</a>, Racket, <a href="#ruby">Ruby</a>, Rust, Scala, Swift, CFEngine and XQuery.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>За mustache</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Mustache може да се използва в HTML, конфигурационни файлове, файлове с код - навсякъде. Mustache работи като разширява таговете в темплейта, използвайки стойности от хеш таблици или обекти.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Нарича се "logic-less" темплейт, тоест темплейт, който не съдържа логика - няма if условия, else клаузи или for цикли. Вместо тях се използват само тагове. Някои тагове се заместват със стойност, други с нищо, трети - с поредица от стойности. </p>
+                </div>
+                <br>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <iframe class="tutorial-video" src="https://www.youtube.com/embed/JlmoQBF2lvw" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Tags Grid Section -->
+    <section id="tags" class="success" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Тагове</h2>
+                    <hr class="star-light">
+                    <p>Таговете се индикират с двойни къдрави скоби: {{ person }} е таг, както и {{ #person }}. И в двата примера реферираме person като ключ или като таг на ключа.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal1" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/variables.jpg" class="img-responsive fixed-size front-img" alt="Variables">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal2" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/sections.jpg" class="img-responsive fixed-size front-img" alt="Sections">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal3" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/non_empty_lists.png" class="img-responsive fixed-size front-img" alt="Non-Empty Lists">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal4" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/lambda.png" class="img-responsive fixed-size front-img" alt="Lambdas">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal5" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/true-false.jpg" class="img-responsive fixed-size front-img" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal6" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/inverted_sections.png" class="img-responsive fixed-size front-img" alt="Inverted Sections">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal7" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/comments.jpg" class="img-responsive fixed-size front-img" alt="Comments">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal8" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/partials.jpg" class="img-responsive fixed-size front-img" alt="Partials">
+                    </a>
+                </div>
+                <div class="col-sm-4 tags-item text-center">
+                    <a href="#tagsModal9" class="tags-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/tags/delimiter.jpg" class="img-responsive fixed-size front-img" alt="Set Delimiters">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Grid Section -->
+    <section id="languages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Езици</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 languages-item text-center" id="js">
+                    <a href="#languagesModal1" class="languages-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/languages/js.png" class="img-responsive fixed-size front-img" alt="JavaScript">
+                    </a>
+                </div>
+                <div class="col-sm-4 languages-item text-center" id="python">
+                    <a href="#languagesModal2" class="languages-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/languages/python.png" class="img-responsive fixed-size front-img" alt="Python">
+                    </a>
+                </div>
+                <div class="col-sm-4 languages-item text-center" id="ruby">
+                    <a href="#languagesModal3" class="languages-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/languages/ruby.png" class="img-responsive fixed-size front-img" alt="Ruby">
+                    </a>
+                </div>
+                <div class="col-sm-4 languages-item text-center" id="java">
+                    <a href="#languagesModal4" class="languages-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/languages/java.png" class="img-responsive fixed-size front-img" alt="Java">
+                    </a>
+                </div>
+                <div class="col-sm-4 languages-item text-center" id="c++">
+                    <a href="#languagesModal5" class="languages-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/languages/c++.png" class="img-responsive fixed-size front-img" alt="C++">
+                    </a>
+                </div>
+                <div class="col-sm-4 languages-item text-center" id="php">
+                    <a href="#languagesModal6" class="languages-link" data-toggle="modal">
+                        <div class="caption front-img-shadow">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/languages/submarine.png" class="img-responsive fixed-size front-img" alt="PHP">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="success" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Контакти</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="row control-group center">
+                        <p>Привет, радвам се, че посети тази секция!</p>
+                        <p>Казвам се Милка Ферезлийска и съм III курс във ФМИ с фак. номер 61710, специалност "Софтуерно инженерство".</p>
+                        <p>Главно се занимавам с уеб с <a href="https://www.python.org/">Python</a> и <a href="https://www.djangoproject.com/">Django</a>. Темплейтният език в <a href="https://www.djangoproject.com/">Django</a> е създаден по идея на <a href="http://jinja.pocoo.org/">Jingja</a> и използва много подобен синтаксис на този в <a href="https://mustache.github.io/">Mustache</a>.</p>
+                        <p>Реших да се разровя малко за това какво е <a href="https://mustache.github.io/">Mustache</a>, какво предлага и как всъщност работи. Резултатите събрах в този прост сайт и се погрижих да го представя по по-различен начин.</p>
+                        <p>Надявам се да ти е било интересно и забавно :)</p>
+
+                        <p>Ако искаш да се свържеш с мен, това са моите контакти: 
+                            <a href="https://github.com/mileto94">GitHub</a> и 
+                            <a href="https://bg.linkedin.com/in/milka-ferezliyska-91915098">LinkedIn</a>
+                        </p>
+                    </div>
+
+                    <div class="row control-group center contact-msg-holder">
+                        <h4>Може да ми изпратиш няколко реда:</h4>
+                        <form name="sentMessage" id="contactForm">
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Име</label>
+                                    <input type="text" class="form-control" placeholder="Име" id="name" required data-validation-required-message="Упс, май не е попълнено името ти.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Имейл адрес</label>
+                                    <input type="email" class="form-control" placeholder="Имейл адрес" id="email" required data-validation-required-message="Упс, май не е попълнен имейл адресът ти.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label>Съобщение</label>
+                                    <textarea rows="5" class="form-control" placeholder="Съобщение" id="message" required data-validation-required-message="Упс, май не е попълнено съобщението ти."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12">
+                                    <button type="submit" class="btn btn-info btn-lg">Изпрати</button>
+                                </div>
+                            </div>
+                        </form>
+                        <h3 class="center">Благодаря!</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h3>Университет</h3>
+                        <p><a href="http://fmi.uni-sofia.bg/">СУ "Св. Климент Охридски", ФМИ</a></p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Контакти</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://github.com/mileto94" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://bg.linkedin.com/in/milka-ferezliyska-91915098" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        ФМИ 2016 &copy; Всички права запазени
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll" id="to-top">  <!-- visible-xs visible-sm -->
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+<!-- ========================================= INNER PAGES ============================================== -->
+    <!-- Tags Modals -->
+    <div class="tags-modal modal fade" id="tagsModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Променливи</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/variables.jpg" class="img-responsive img-centered" alt="Variables">
+                            <p>Най-простите за употреба вид тагове. Тагът {{name}} в разов html документ би опитал да открие името на ключа в текущия контекст. Ако няма такова име, ще провери в контекста на родителя рекурсивно. Ако при достигане на най-външния контекст променливата все още не е открита, нищо няма да се рендерира.</p>
+
+                            <p>Всички променливи се ескейпват по подразбиране в HTML документа. Ако искате да върнете неескейпнат HTML, използвайте тройни къдрави скоби: {{{name}}}.</p>
+
+                            <p>За да предотвратите ескейпването на променливи, може да използвате &: {{& name}}. Това може да е полезно, когато се променят разделителите.</p>
+
+                            <p>По подразбиране липсваща променлива връща празен стринг. Обикновено това може да се промени в локалния конфигурационен файл на библитеката Mustache. Например: версията за Ruby поддържа хвърлянето на грешка в този случай.</p>
+
+                            <p><code>Темплейт:</code></p>
+                            <pre>
+<code>{{ name }}
+{{ age }}
+{{ company }}
+{{{ company }}}</code>
+</pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+    "name": "Chris",
+    "company": "<b>GitHub</b>"
+}</code></pre>
+                            <p><code>Резултат:</code></p>
+                            <pre><code>Chris
+
+&lt;b&gt;GitHub&lt;/b&gt;
+<b>GitHub</b>
+</code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Variables">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Секции</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/sections.jpg" class="img-responsive img-centered" alt="Sections">
+                            <p>Секциите рендерират блокове от текст един или повече пъти в зависимост от стойността на ключа в текущия контекст.</p>
+
+                            <p>Секцията започва с "#" и завършва с "/". Например тагът {{#person}} започва секцията "person", а тагът {{/person}} я завършва.</p>
+
+                            <p>Поведението на секцията се определя от стойността на ключа.</p>
+
+                            <p><b>Стойност false или празен списък:</b></p>
+
+                            <p>Ако ключът person съществува и има стойност false или празен лист, HTML-ът между "#" и "/" няма да се визуализира.</p>
+
+                            <p><code>Темплейт:</code></p>
+<pre><code>Shown.
+{{#person}}
+    Never shown!
+{{/person}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+    "person": false
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>Shown.</code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Sections">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Непразни списъци</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/non_empty_lists.png" class="img-responsive img-centered" alt="">
+                            <p>Ако ключът person съществува и има стойност, различна от false, HTML-ът между "+" и "/" ще се визуализира един или повече пъти.</p>
+                            <p>Когато стойността е непразен списък, текстът в блока ще се визуализира по един път за всеки елемент в списъка. Контекстът на блока ще се запазва във всеки елемент за всяка итерация. По този начин се осъществява обхождане на колекциите.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#repo}}
+<b>    {{name}}</b>
+{{/repo}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+    "repo": [
+        { "name": "resque" },
+        { "name": "hub" },
+        { "name": "rip" }
+  ]
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code><b>resque</b>
+<b>hub</b>
+<b>rip</b></code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Non-emptyLists">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Lambda изрази</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/lambda.png" class="img-responsive img-centered" alt="">
+                            <p>Когато стойността е обект, който можем да изпълним, например – функция или lamda функции, обектът ще се изпълни и ще се предаде на контекста в блока.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#wrapped}}
+<b>    {{name}}</b>
+{{/wrapped}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+    "name": "Willy",
+        "wrapped": function () {
+            return function (text, render) {
+              return "&lt;b&gt;" + render(text) + "&lt;b&gt;"
+        }
+    }
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code><b>Willy is awesome.</b></code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Lambdas">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Non-False стойности</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/true-false.jpg" class="img-responsive img-centered" alt="">
+                            <p>Когато стойността на променлива е non-false, но не е списък, тя ще бъде използвана еднократно в блока при рендерирането си.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#person?}}
+    Hi {{name}}!
+{{/person?}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+    "person?": { "name": "Jon" }
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>Hi Jon!</b></code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Non-FalseValues">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Обърнати секции</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/inverted_sections.png" class="img-responsive img-centered" alt="">
+                            <p>Обърнатите секции започват с "^" и завършват с "/". Например {{ ^person }} започва обърната секция "person", {{ /person }} я завършва.</p>
+                            <p>Докато секциите могат да се използват един или повече пъти спрямо стойността на ключа, то обърнатите секции могат да рендерират текстът един път в зависимост от обърнатата стойност на ключа.</p>
+                            <p>Тоест ако ключът не съществува, ще бъде рендерирано като false или като празен списък.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>{{#repo?}}
+    <b>{{name}}</b>
+{{/repo}}
+{{^repo}}
+    No repos :(
+{{/repo}}
+</code></pre>
+
+                            <p><code>Хеш таблица:</code></p>
+<pre><code>{
+    "repo": []
+}
+</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>
+No repos :(</code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Inverted-Sections">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Коментари</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/comments.jpg" class="img-responsive img-centered" alt="">
+                            <p>Коментарите започват с “!” и се игнорират при рендерирането на HTML.</p>
+                            <p>Коментарите могат да съдържат нови редове.</p>
+                            <p><code>Темплейт:</code></p>
+<pre><code>&lt;h1&gt;Today{{! ignore me }}.&lt;/h1&gt;</code></pre>
+
+                            <p><code>Резултат:</code></p>
+
+                            <pre><code>
+&lt;h1&gt;Today.&lt;/h1&gt;</code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Comments">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Partials (частични темплейти)</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/partials.jpg" class="img-responsive img-centered" alt="">
+                            <p>Partial-ите започват с “>” като {{> box}}.</p>
+                            <p>Partial-ите се рендерират по време на изпълнение и е възможно да има рекурсивни части, стига да се избягват безкрайните цикли.</p>
+                            <p>Частите наследяват контекста, от който са извикани. Например в <code>eRuby</code> (<a href="http://en.wikipedia.org/wiki/ERuby">Embedded Ruby</a>) може да имаме следния пример:.</p>
+<pre><code><%= partial :next_more, :start => start, :size => size %></code></pre>
+
+                            <p><code>Mustache изисква само това:</code></p>
+<pre><code>{{> next_more}}</code></pre>
+
+                            <h3>Защо?</h3>
+                            <p>Защото файлът next_more.mustache ще наследи  методите size и start от извикващия контекст.</p>
+                            <p>По този начин можете да си мислите за partial-ите като includes, imports, разширители на темплейти, вгнездени темплейти, подтемплейти и др.</p>
+
+                            <p>Например темплейтът <code>base.mustache</code>:</p>
+ <pre><code>&lt;h2&gt;Names&lt;/h2&gt;
+{{#names}}
+    {{> user}}
+{{/names}}
+</code></pre>
+                            <p>и partial <code>user.mustache</code>:</p>
+<pre><code>&lt;strong&gt;{{name}}&lt;/strong&gt;
+</code></pre>
+
+                            <p>Могат да се напишат като <code>един разширен темплейт</code>:</p>
+
+<pre><code>&lt;h2&gt;Names&lt;/h2&gt;
+{{#names}}
+    &lt;strong&gt;{{name}}&lt;/strong&gt;
+{{/names}}
+</code></pre>
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Partials">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tags-modal modal fade" id="tagsModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Поставяне на разделители</h2>
+                            <hr class="star-primary">
+                            <img src="img/tags/delimiter.jpg" class="img-responsive img-centered" alt="">
+                            <p>Поставянето на разделители започва с "=" и променя разделителите за тагове от "{{" и "}}" към собствено дефинирани стрингове.</p>
+                            <p><code>Пример:</code></p>
+<pre><code>* {{default_tags}}
+{{=<% %>=}}
+* <% erb_style_tags %>
+<%={{ }}=%>
+* {{ default_tags_again }}
+</code></pre>
+
+                            <p>Тук имаме списък от 3 елемента. Първият елемент използва стила на таговете по подразбиране, вторият използва <a href="http://en.wikipedia.org/wiki/ERuby">erb</a> стила, както е дефинирано според тагът за разделител, и третият елемент връща първоначалния стил след още една декларация на таг за разделител.</p>
+                            <p>Според <a href="http://ctemplate.sourceforge.net/">ctemplates</a> това е "полезно за езици като TeX, в които двойните къдрави скоби може да се появят в текста".</p>
+                            <p style="color:red;">ВАЖНО!!! Собствено дефинираните разделители не могат да съдържат спейсове или "=".</p>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="http://mustache.github.io/mustache.5.html#Set-Delimiter">Mustache</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- languages Modals -->
+    <div class="languages-modal modal fade" id="languagesModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>JavaScript</h2>
+                            <hr class="star-primary">
+                            <img src="img/languages/js.png" class="img-responsive img-centered" alt="JavaScript">
+                            <p>Кратък пример как да използваме mustache.js:</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> view <span class="pl-k">=</span> {
+  title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Joe<span class="pl-pds">"</span></span>,
+  <span class="pl-en">calc</span><span class="pl-k">:</span> <span class="pl-k">function</span> () {
+    <span class="pl-k">return</span> <span class="pl-c1">2</span> <span class="pl-k">+</span> <span class="pl-c1">4</span>;
+  }
+};
+
+<span class="pl-k">var</span> output <span class="pl-k">=</span> <span class="pl-smi">Mustache</span>.<span class="pl-en">render</span>(<span class="pl-s"><span class="pl-pds">"</span>{{title}} spends {{calc}}<span class="pl-pds">"</span></span>, view);</pre></div>
+
+<p>В този пример функцията <code>Mustache.render</code> приема 2 параметъра: темплейтът <a href="http://mustache.github.com/">mustache</a> и <code>обектът</code>, който съдържа данните и кодът, за да се рендерира темплейта.</p>
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="https://github.com/janl/mustache.js">Mustache JS</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="languages-modal modal fade" id="languagesModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <h2>Pystache</h2>
+                            <hr class="star-primary">
+                            <img src="img/languages/python.png" class="img-responsive img-centered" alt="Pystache">
+                            <p>Как да го използваме?</p>
+                            <pre><code>&gt;&gt;&gt; import pystache
+&gt;&gt;&gt; print pystache.render('Hi {{person}}!', {'person': 'Mom'})
+Hi Mom!
+</code></pre>
+                            <p>Може също да създадем класове, които да пазят логиката за темплейтите.</p>
+
+                            <p>Например създаваме класа SayHello (в .../examples/readme.py):</p>
+
+<pre><code>class SayHello(object):
+    def to(self):
+        return "Pizza"
+</code></pre>
+
+<p>Инициализираме го:</p>
+
+<pre><code>&gt;&gt;&gt; from pystache.tests.examples.readme import SayHello
+&gt;&gt;&gt; hello = SayHello()
+</code></pre>
+
+<p>Тогава в темплейтите say_hello.mustache (по подразбиране в същата директория, където е дефиниран класа) използваме:</p>
+
+<pre><code>Hello, {{to}}!
+</code></pre>
+
+<p>Всичко заедно:</p>
+
+<pre><code>&gt;&gt;&gt; renderer = pystache.Renderer()
+&gt;&gt;&gt; print renderer.render(hello)
+Hello, Pizza!
+</code></pre>
+
+<p>За по-добър контрол при рендерирането (например използване на собствена директория за темплейти) 
+може да използваме класът <code>Renderer</code> както по-горе. Темплейтът може да подаде атрибути на 
+конструктура на Render класа или да ги присвои на негова инстанция. Ако искаме да персонализираме темплейта, 
+който се зарежда за определено view, е необходимо да наследим <code>TemplateSpec</code>. Виж документацията 
+на класа <a href="https://github.com/defunkt/pystache/blob/master/pystache/renderer.py">Renderer</a> и 
+класа <a href="https://github.com/defunkt/pystache/blob/master/pystache/template_spec.py">TemplateSpec</a> 
+за повече информация.</p>
+
+<p>Можем също и да създаваме темплейт, който да приема аргументи:</p>
+
+<pre><code>&gt;&gt;&gt; parsed = pystache.parse(u"Hey {{#who}}{{.}}!{{/who}}")
+&gt;&gt;&gt; print parsed
+[u'Hey ', _SectionNode(key=u'who', index_begin=12, index_end=18, parsed=[_EscapeNode(key=u'.'), u'!'])]
+</code></pre>
+
+<p>И тогава:</p>
+
+<pre><code>&gt;&gt;&gt; print renderer.render(parsed, {'who': 'Pops'})
+Hey Pops!
+&gt;&gt;&gt; print renderer.render(parsed, {'who': 'you'})
+Hey you!
+</code></pre>
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="https://github.com/defunkt/pystache#pystache">Pystache GitHub</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="languages-modal modal fade" id="languagesModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ruby</h2>
+                            <hr class="star-primary">
+                            <img src="img/languages/ruby.png" class="img-responsive img-centered" alt="Ruby">
+                            <p>С Mustache view-тата, които пишем, се разделят на 2 части: Ruby клас и HTML темплейт.</p>
+                            <p>Цялата логика, решения и код се съхраняват във view-то, а всичкият markup - в темплейта. 
+                            По този начин темплейтът не прави нищо друго освен да реферира методи в нашите view-та.</p>
+                            <p>Стриктното разделение прави по-лесно писането на чисти темплейти, което ги прави по-лесно 
+                            разширяеми, тестваеми и гъвкави.</p>
+
+                            <p>Кратък пример:</p>
+
+<pre><code>&gt;&gt; require 'mustache'
+=&gt; true
+&gt;&gt; Mustache.render("Hello {{planet}}", :planet =&gt; "World!")
+=&gt; "Hello World!"
+</code></pre>
+
+                            <p>Ето един каноничен пример, който е само малка част от всички
+                            <a href="https://github.com/mustache/mustache/tree/master/examples">примери</a>:</p>
+
+<pre><code>class Simple &lt; Mustache
+  def name
+    "Chris"
+  end
+
+  def value
+    10_000
+  end
+
+  def taxed_value
+    value * 0.6
+  end
+
+  def in_ca
+    true
+  end
+end
+</code></pre>
+
+                            <p>Просто създаваме обикновен Ruby клас и дефинираме методите му. 
+                            Някои методи реферират други, някои връщат стойности, други - булеви стойности.</p>
+
+                            <p>Сега да напишем и темплейта:</p>
+
+<pre><code>Hello {{name}}
+You have just won {{value}} dollars!
+{{#in_ca}}
+Well, {{taxed_value}} dollars, after taxes.
+{{/in_ca}}
+</code></pre>
+
+                            <p>Този темплейт реферира нашите методи-view-та. За да съберем всичко заедно, 
+                            ето как всъщност изглежда кодът, който ще рендерира HTML:</p>
+
+<pre><code>Simple.render
+</code></pre>
+
+                            <p>Което връща следното:</p>
+
+<pre><code>Hello Chris
+You have just won 10000 dollars!
+Well, 6000.0 dollars, after taxes.
+</code></pre>
+
+                            <p>Просто :)</p>
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="https://github.com/mustache/mustache">Mustache & Ruby</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="languages-modal modal fade" id="languagesModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mustache.java</h2>
+                            <hr class="star-primary">
+                            <img src="img/languages/java.png" class="img-responsive img-centered" alt="Java">
+                            <p>Примерен темплейтен файл:</p>
+
+<pre><code>{{#items}}
+Name: {{name}}
+Price: {{price}}
+  {{#features}}
+  Feature: {{description}}
+  {{/features}}
+{{/items}}
+</code></pre>
+
+<p>Така подаваме данните на темплейта:</p>
+<div class="highlight highlight-source-java"><pre><span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">Context</span> {
+  <span class="pl-k">List&lt;<span class="pl-smi">Item</span>&gt;</span> <span class="pl-en">items</span>() {
+    <span class="pl-k">return</span> <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(
+      <span class="pl-k">new</span> <span class="pl-smi">Item</span>(<span class="pl-s"><span class="pl-pds">"</span>Item 1<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>$19.99<span class="pl-pds">"</span></span>, <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(<span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>New!<span class="pl-pds">"</span></span>), <span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Awesome!<span class="pl-pds">"</span></span>))),
+      <span class="pl-k">new</span> <span class="pl-smi">Item</span>(<span class="pl-s"><span class="pl-pds">"</span>Item 2<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>$29.99<span class="pl-pds">"</span></span>, <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(<span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Old.<span class="pl-pds">"</span></span>), <span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Ugly.<span class="pl-pds">"</span></span>)))
+    );
+  }
+
+  <span class="pl-k">static</span> <span class="pl-k">class</span> <span class="pl-en">Item</span> {
+    <span class="pl-en">Item</span>(<span class="pl-smi">String</span> <span class="pl-v">name</span>, <span class="pl-smi">String</span> <span class="pl-v">price</span>, <span class="pl-k">List&lt;<span class="pl-smi">Feature</span>&gt;</span> <span class="pl-v">features</span>) {
+      <span class="pl-v">this</span><span class="pl-k">.</span>name <span class="pl-k">=</span> name;
+      <span class="pl-v">this</span><span class="pl-k">.</span>price <span class="pl-k">=</span> price;
+      <span class="pl-v">this</span><span class="pl-k">.</span>features <span class="pl-k">=</span> features;
+    }
+    <span class="pl-smi">String</span> name, price;
+    <span class="pl-k">List&lt;<span class="pl-smi">Feature</span>&gt;</span> features;
+  }
+
+  <span class="pl-k">static</span> <span class="pl-k">class</span> <span class="pl-en">Feature</span> {
+    <span class="pl-en">Feature</span>(<span class="pl-smi">String</span> <span class="pl-v">description</span>) {
+       <span class="pl-v">this</span><span class="pl-k">.</span>description <span class="pl-k">=</span> description;
+    }
+    <span class="pl-smi">String</span> description;
+  }
+}</pre></div>
+
+<p>И получаваме:</p>
+<pre><code>Name: Item 1
+Price: $19.99
+  Feature: New!
+  Feature: Awesome!
+Name: Item 2
+Price: $29.99
+  Feature: Old.
+  Feature: Ugly.
+</code></pre>
+
+<p>Рендерирането на темплейта се осъществява последователно. Например, ако имаме блокиращ код в своите колбеци, системата ще спре докато този код не се изпълни:</p>
+<pre><span class="pl-k">static</span> <span class="pl-k">class</span> <span class="pl-en">Feature</span> {
+  <span class="pl-en">Feature</span>(<span class="pl-smi">String</span> <span class="pl-v">description</span>) {
+    <span class="pl-v">this</span><span class="pl-k">.</span>description <span class="pl-k">=</span> description;
+  }
+
+  <span class="pl-smi">String</span> <span class="pl-en">description</span>() <span class="pl-k">throws</span> <span class="pl-smi">InterruptedException</span> {
+    <span class="pl-smi">Thread</span><span class="pl-k">.</span>sleep(<span class="pl-c1">1000</span>);
+    <span class="pl-k">return</span> description;
+  }
+}</pre>
+
+<p>Ако променим дефиницията на колбека да връща изпълним обект, то той веднага ще се изпълни в нова нишка на главния процес като използва ExecutorService, когато се създава MustacheFactory.</p>
+<pre><span class="pl-k">Callable&lt;<span class="pl-smi">String</span>&gt;</span> description() throws <span class="pl-smi">InterruptedException</span> {
+  <span class="pl-k">return</span> <span class="pl-k">new</span> <span class="pl-k">Callable&lt;<span class="pl-smi">String</span>&gt;</span>() {
+
+    <span class="pl-k">@Override</span>
+    <span class="pl-k">public</span> <span class="pl-smi">String</span> <span class="pl-en">call</span>() <span class="pl-k">throws</span> <span class="pl-smi">Exception</span> {
+      <span class="pl-smi">Thread</span><span class="pl-k">.</span>sleep(<span class="pl-c1">1000</span>);
+      <span class="pl-k">return</span> description;
+    }
+  };
+}</pre>
+
+
+<p>Това позволява използването на асинхронни задачи, разпределени във времето. Пълният пример е:</p>
+<pre><span class="pl-k">package</span> <span class="pl-smi">mustachejava</span>;
+
+<span class="pl-k">import</span> <span class="pl-smi">com.github.mustachejava.DefaultMustacheFactory</span>;
+<span class="pl-k">import</span> <span class="pl-smi">com.github.mustachejava.Mustache</span>;
+<span class="pl-k">import</span> <span class="pl-smi">com.github.mustachejava.MustacheFactory</span>;
+
+<span class="pl-k">import</span> <span class="pl-smi">java.io.IOException</span>;
+<span class="pl-k">import</span> <span class="pl-smi">java.io.PrintWriter</span>;
+<span class="pl-k">import</span> <span class="pl-smi">java.io.Writer</span>;
+<span class="pl-k">import</span> <span class="pl-smi">java.util.Arrays</span>;
+<span class="pl-k">import</span> <span class="pl-smi">java.util.List</span>;
+
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">Example</span> {
+
+  <span class="pl-k">List&lt;<span class="pl-smi">Item</span>&gt;</span> <span class="pl-en">items</span>() {
+    <span class="pl-k">return</span> <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(
+      <span class="pl-k">new</span> <span class="pl-smi">Item</span>(<span class="pl-s"><span class="pl-pds">"</span>Item 1<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>$19.99<span class="pl-pds">"</span></span>, <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(<span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>New!<span class="pl-pds">"</span></span>), <span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Awesome!<span class="pl-pds">"</span></span>))),
+      <span class="pl-k">new</span> <span class="pl-smi">Item</span>(<span class="pl-s"><span class="pl-pds">"</span>Item 2<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>$29.99<span class="pl-pds">"</span></span>, <span class="pl-smi">Arrays</span><span class="pl-k">.</span>asList(<span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Old.<span class="pl-pds">"</span></span>), <span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Ugly.<span class="pl-pds">"</span></span>)))
+    );
+  }
+
+  <span class="pl-k">static</span> <span class="pl-k">class</span> <span class="pl-en">Item</span> {
+    <span class="pl-en">Item</span>(<span class="pl-smi">String</span> <span class="pl-v">name</span>, <span class="pl-smi">String</span> <span class="pl-v">price</span>, <span class="pl-k">List&lt;<span class="pl-smi">Feature</span>&gt;</span> <span class="pl-v">features</span>) {
+      <span class="pl-v">this</span><span class="pl-k">.</span>name <span class="pl-k">=</span> name;
+      <span class="pl-v">this</span><span class="pl-k">.</span>price <span class="pl-k">=</span> price;
+      <span class="pl-v">this</span><span class="pl-k">.</span>features <span class="pl-k">=</span> features;
+    }
+
+    <span class="pl-smi">String</span> name, price;
+    <span class="pl-k">List&lt;<span class="pl-smi">Feature</span>&gt;</span> features;
+  }
+
+  <span class="pl-k">static</span> <span class="pl-k">class</span> <span class="pl-en">Feature</span> {
+    <span class="pl-en">Feature</span>(<span class="pl-smi">String</span> <span class="pl-v">description</span>) {
+      <span class="pl-v">this</span><span class="pl-k">.</span>description <span class="pl-k">=</span> description;
+    }
+
+    <span class="pl-smi">String</span> description;
+  }
+
+  <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">main</span>(<span class="pl-k">String</span>[] <span class="pl-v">args</span>) <span class="pl-k">throws</span> <span class="pl-smi">IOException</span> {
+    <span class="pl-smi">MustacheFactory</span> mf <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">DefaultMustacheFactory</span>();
+    <span class="pl-smi">Mustache</span> mustache <span class="pl-k">=</span> mf<span class="pl-k">.</span>compile(<span class="pl-s"><span class="pl-pds">"</span>template.mustache<span class="pl-pds">"</span></span>);
+    mustache<span class="pl-k">.</span>execute(<span class="pl-k">new</span> <span class="pl-smi">PrintWriter</span>(<span class="pl-smi">System</span><span class="pl-k">.</span>out), <span class="pl-k">new</span> <span class="pl-smi">Example</span>())<span class="pl-k">.</span>flush();
+  }
+}</pre>
+
+<p>Алтернативен подход за осигуряване на променливи е използването на обект от тип Map:</p>
+<pre>  <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> main(<span class="pl-k">String</span>[] args) throws <span class="pl-smi">IOException</span> {
+    <span class="pl-k">HashMap&lt;<span class="pl-smi">String</span>, <span class="pl-smi">Object</span>&gt;</span> scopes <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">HashMap&lt;<span class="pl-smi">String</span>, <span class="pl-smi">Object</span>&gt;</span>();
+    scopes<span class="pl-k">.</span>put(<span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>Mustache<span class="pl-pds">"</span></span>);
+    scopes<span class="pl-k">.</span>put(<span class="pl-s"><span class="pl-pds">"</span>feature<span class="pl-pds">"</span></span>, <span class="pl-k">new</span> <span class="pl-smi">Feature</span>(<span class="pl-s"><span class="pl-pds">"</span>Perfect!<span class="pl-pds">"</span></span>));
+
+    <span class="pl-smi">Writer</span> writer <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">OutputStreamWriter</span>(<span class="pl-smi">System</span><span class="pl-k">.</span>out);
+    <span class="pl-smi">MustacheFactory</span> mf <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">DefaultMustacheFactory</span>();
+    <span class="pl-smi">Mustache</span> mustache <span class="pl-k">=</span> mf<span class="pl-k">.</span>compile(<span class="pl-k">new</span> <span class="pl-smi">StringReader</span>(<span class="pl-s"><span class="pl-pds">"</span>{{name}}, {{feature.description}}!<span class="pl-pds">"</span></span>), <span class="pl-s"><span class="pl-pds">"</span>example<span class="pl-pds">"</span></span>);
+    mustache<span class="pl-k">.</span>execute(writer, scopes);
+    writer<span class="pl-k">.</span>flush();
+  }</pre>
+
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="https://github.com/spullara/mustache.java">Mustache.java</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="languages-modal modal fade" id="languagesModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>mstch</h2>
+                            <h4>{{mustache}} templates in C++11</h4>
+                            <hr class="star-primary">
+                            <img src="img/languages/safe.png" class="img-responsive img-centered" alt="">
+                            <p>mstch е завършена изцяло имплементация на {{mustache}}, написана само на последните версии C++. Съвместима е с v1.1.3, включително и lambda функциите.</p>
+
+<p>Основна употреба:</p>
+
+<pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>iostream<span class="pl-pds">&gt;</span></span>
+#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>mstch/mstch.hpp<span class="pl-pds">&gt;</span></span>
+
+<span class="pl-k">int</span> <span class="pl-en">main</span>() {
+  std::string view{<span class="pl-s"><span class="pl-pds">"</span>{{#names}}Hi {{name}}!<span class="pl-cce">\n</span>{{/names}}<span class="pl-pds">"</span></span>};
+  mstch::map context{
+    {<span class="pl-s"><span class="pl-pds">"</span>names<span class="pl-pds">"</span></span>, mstch::array{
+      mstch::map{{<span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>, std::string{<span class="pl-s"><span class="pl-pds">"</span>Chris<span class="pl-pds">"</span></span>}}},
+      mstch::map{{<span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>, std::string{<span class="pl-s"><span class="pl-pds">"</span>Mark<span class="pl-pds">"</span></span>}}},
+      mstch::map{{<span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>, std::string{<span class="pl-s"><span class="pl-pds">"</span>Scott<span class="pl-pds">"</span></span>}}},
+    }}
+  };
+
+  std::cout &lt;&lt; <span class="pl-c1">mstch::render</span>(view, context) &lt;&lt; std::endl;
+
+  <span class="pl-k">return</span> <span class="pl-c1">0</span>;
+}
+</pre>
+
+<p>Резултатът е:</p>
+<pre><code>Hi Chris!
+Hi Mark!
+Hi Scott!
+</code></pre>
+
+<br>
+<h4>Структура на данните</h4>
+
+<p>Използваните типове данни в примера са mstch::array и mstch::map,които всъщност са alias-и за стандартните типове:</p>
+<pre><code>using map = std::map<const std::string, node>;
+using array = std::vector<node>;
+</code></pre>
+<p>mstch::node е boost::variant, което може да съдържа std::string, int, double, bool, mstch::lambda или astd::shared_ptr<mstch::object>, също масив или map, който работи като JSON обект.</p>
+
+<p>Важно е да се отбележи, че когато използваме std::string  като стойност, трябва да поясним експлицитно типа, докато const char*, например "foobar" ще бъде неявно конвертирано до bool. </p>
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="https://github.com/no1msd/mstch#mstch---mustache-templates-in-c11">mstch</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="languages-modal modal fade" id="languagesModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="top-right" data-dismiss="modal">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mustache.php</h2>
+                            <hr class="star-primary">
+                            <img src="img/languages/submarine.png" class="img-responsive img-centered" alt="">
+                            <p>Кратък пример:</p>
+
+<pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$m</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Mustache_Engine</span>;</span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$m</span><span class="pl-k">-&gt;</span>render(<span class="pl-s"><span class="pl-pds">'</span>Hello {{planet}}<span class="pl-pds">'</span></span>, <span class="pl-c1">array</span>(<span class="pl-s"><span class="pl-pds">'</span>planet<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>World!<span class="pl-pds">'</span></span>)); <span class="pl-c">// "Hello World!"</span></span></pre>
+
+<p>По-сложен пример (каноничен за Mustache):</p>
+
+<pre>Hello {{name}}
+You have just won {{value}} dollars!
+{{#in_ca}}
+Well, {{taxed_value}} dollars, after taxes.
+{{/in_ca}}</pre>
+
+<p>Най-често създаваме view, в което има обект на име “context”, който може да е асоциативен списък. Ето по-прост начин това да се направи: </p>
+
+<pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-k">class</span> <span class="pl-en">Chris</span> {</span>
+<span class="pl-s1">    <span class="pl-k">public</span> <span class="pl-smi">$name</span>  <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>Chris<span class="pl-pds">"</span></span>;</span>
+<span class="pl-s1">    <span class="pl-k">public</span> <span class="pl-smi">$value</span> <span class="pl-k">=</span> <span class="pl-c1">10000</span>;</span>
+<span class="pl-s1"></span>
+<span class="pl-s1">    <span class="pl-k">public</span> <span class="pl-k">function</span> <span class="pl-en">taxed_value</span>() {</span>
+<span class="pl-s1">        <span class="pl-k">return</span> <span class="pl-smi">$this</span><span class="pl-k">-&gt;</span><span class="pl-smi">value</span> <span class="pl-k">-</span> (<span class="pl-smi">$this</span><span class="pl-k">-&gt;</span><span class="pl-smi">value</span> <span class="pl-k">*</span> <span class="pl-c1">0.4</span>);</span>
+<span class="pl-s1">    }</span>
+<span class="pl-s1"></span>
+<span class="pl-s1">    <span class="pl-k">public</span> <span class="pl-smi">$in_ca</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span>
+<span class="pl-s1">}</span></pre>
+
+<p>А сега го рендерираме:</p>
+
+<pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$m</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Mustache_Engine</span>;</span>
+<span class="pl-s1"><span class="pl-smi">$chris</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-c1">Chris</span>;</span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$m</span><span class="pl-k">-&gt;</span>render(<span class="pl-smi">$template</span>, <span class="pl-smi">$chris</span>);</span></pre>
+
+                            <ul class="list-inline item-details">
+                                <li>GitHub:
+                                    <strong><a href="https://github.com/mustache/mustache.github.com">Mustache GitHub</a>
+                                    </strong>
+                                </li>
+                                <li>Дата:
+                                    <strong>Май 2016</strong>
+                                </li>
+                                <li>Източник:
+                                    <strong><a href="https://github.com/bobthecow/mustache.php">Mustache.php</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Затвори</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
