@@ -79,6 +79,7 @@ hr.star-primary:after {
     margin: 0 auto;
     max-height: 260px;
     max-width: 360px;
+    width: 100%;
 }
 
 .fixed-size {
@@ -194,7 +195,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 section.success {
@@ -425,7 +426,7 @@ footer .footer-below {
 
 .tags-modal .modal-content h2, .languages-modal .modal-content h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .tags-modal .modal-content img, .languages-modal .modal-content img {
@@ -515,4 +516,35 @@ footer .footer-below {
 
 #go-to-top i {
     text-align: center;
+}
+
+.front-img, .front-img-shadow {
+    background-position: 50%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.languages-item a, .tags-item a {
+    width: 250px;
+}
+
+.top-right {
+    /*float: right;*/
+    text-align: right;
+    right: 15px;
+    top: 10px;
+}
+
+.top-right span {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.tags-modal .modal-content, .languages-modal .modal-content {
+    padding: 10px 15px 0 10px;
+}
+
+#to-top i {
+    vertical-align: text-top;
 }

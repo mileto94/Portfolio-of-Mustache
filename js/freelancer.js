@@ -35,3 +35,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(window).scroll(function(){ 
+    if ($(this).scrollTop() > 100) { 
+        $('#to-top').fadeIn(); 
+    } else { 
+        $('#to-top').fadeOut(); 
+    } 
+});
